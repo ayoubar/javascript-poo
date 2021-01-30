@@ -54,15 +54,20 @@ Voiture.prototype.setMarque = function (m) {
   this.marque = m;
 };
 
+Voiture.prototype.balabla = function () {
+  console.log('bla nla');
+};
+
 //instancier des objets
 let voiture1 = new Voiture('BMW', 'x5', 'noir', 'AA-123-AA');
 let voiture2 = new Voiture('Merecedes', 'cls 350', 'noir');
 
-console.log(voiture1.getMarque());
-voiture1.setMarque('Ford');
-console.log(voiture1.getMarque());
+voiture1.getFullDescription();
+voiture1.changeModel('X3');
+voiture1.balabla();
 
-// voiture1.getFullDescription();
+voiture1.model = 'ZADAZDAZ';
+console.log(voiture1);
 // voiture2.getFullDescription();
 
 // console.log('avant changement  du model', voiture1);
@@ -78,3 +83,13 @@ console.log(voiture1.getMarque());
   Le JavaScript est un langage orienté objet à prototype
 
 */
+
+// let somme = function (a, b) {
+//   return a + b;
+// };
+
+// function somme1(a,b) {
+//   return a+b
+// }
+
+// console.log(somme(2, 3));
